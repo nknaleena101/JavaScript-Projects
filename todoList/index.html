@@ -2,12 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <title>TODO List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <script src="./script.js"></script>
+    <div class="container">
+        <h1>TODO LIST</h1>
+        <div class="input-section">
+            <input type="text" id="js-input" placeholder="Enter a new task">
+            <button id="js-add-btn">Add</button>
+        </div>
+        <div class="js-todos">
+            <div class="todo-item">
+                <span class="todo-text">Wash Dishes</span>
+                <button class="check-btn">✅</button>
+            </div>
+            <div class="todo-item">
+                <span class="todo-text">Clean Room</span>
+                <button class="check-btn">✅</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
