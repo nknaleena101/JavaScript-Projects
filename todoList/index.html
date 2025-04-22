@@ -2,28 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TODO List</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple-Inspired To-Do List</title>
 </head>
 <body>
     <div class="container">
-        <h1>TODO LIST</h1>
-        <div class="input-section">
-            <input type="text" id="js-input" placeholder="Enter a new task">
-            <button id="js-add-btn">Add</button>
-        </div>
-        <div class="js-todos">
-            <div class="todo-item">
-                <span class="todo-text">Wash Dishes</span>
-                <button class="check-btn">✅</button>
+        <header>
+            <h1>Today</h1>
+            <div class="date" id="current-date">April 22, 2025</div>
+        </header>
+        
+        <div class="list-container">
+            <div class="todo-input">
+                <input type="text" placeholder="Add new task..." id="new-task">
+                <button id="add-task">Add</button>
             </div>
-            <div class="todo-item">
-                <span class="todo-text">Clean Room</span>
-                <button class="check-btn">✅</button>
+            
+            <ul class="todo-list" id="todo-list">
+                <li class="todo-item">
+                    <input type="checkbox" id="task1">
+                    <span>Prepare presentation for meeting</span>
+                    <button class="delete">×</button>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox" id="task2">
+                    <span>Reply to emails</span>
+                    <button class="delete">×</button>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox" id="task3" checked>
+                    <span>Morning workout</span>
+                    <button class="delete">×</button>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox" id="task4">
+                    <span>Schedule doctor's appointment</span>
+                    <button class="delete">×</button>
+                </li>
+            </ul>
+            
+            <div class="empty-state" style="display: none;">
+                <p>You have no tasks yet. Add some to get started!</p>
             </div>
         </div>
+        
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
