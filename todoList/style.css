@@ -125,11 +125,6 @@ header h1 {
     color: #333;
 }
 
-.todo-item input[type="checkbox"]:checked + span {
-    text-decoration: line-through;
-    color: #a0a0a0;
-}
-
 .todo-item .delete {
     color: #ff3b30;
     background: none;

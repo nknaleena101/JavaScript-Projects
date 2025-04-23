@@ -16,30 +16,11 @@
         <div class="list-container">
             <div class="todo-input">
                 <input type="text" placeholder="Add new task..." id="new-task">
-                <button id="add-task">Add</button>
+                <button id="add-task" onClick="addTodo()">Add</button>
             </div>
             
-            <ul class="todo-list" id="todo-list">
-                <li class="todo-item">
-                    <input type="checkbox" id="task1">
-                    <span>Prepare presentation for meeting</span>
-                    <button class="delete">×</button>
-                </li>
-                <li class="todo-item">
-                    <input type="checkbox" id="task2">
-                    <span>Reply to emails</span>
-                    <button class="delete">×</button>
-                </li>
-                <li class="todo-item">
-                    <input type="checkbox" id="task3" checked>
-                    <span>Morning workout</span>
-                    <button class="delete">×</button>
-                </li>
-                <li class="todo-item">
-                    <input type="checkbox" id="task4">
-                    <span>Schedule doctor's appointment</span>
-                    <button class="delete">×</button>
-                </li>
+            <ul class="todo-list">
+                
             </ul>
             
             <div class="empty-state" style="display: none;">
