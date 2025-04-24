@@ -1,7 +1,7 @@
 const inputElement = document.querySelector('#new-task');
 const todoListElement = document.querySelector('.todo-list');
 
-let todoList = [];
+let todoList = JSON.parse(localStorage.getItem("todoList"));
 
 showHtml()
 
@@ -13,7 +13,6 @@ function addTodo(){
 
     console.log(todoList);
     showHtml();
-    localStorage.setItem("todoList", JSON.stringify(todoList));
 }
 
 function showHtml(){
@@ -29,4 +28,5 @@ function showHtml(){
         htmlCode += html;
     }
     todoListElement.innerHTML = `${htmlCode}`;
+    
 }
