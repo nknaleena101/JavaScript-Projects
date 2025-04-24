@@ -13,6 +13,7 @@ function addTodo(){
 
     console.log(todoList);
     showHtml();
+    localStorage.setItem("todoList", JSON.stringify(todoList));
 }
 
 function showHtml(){
