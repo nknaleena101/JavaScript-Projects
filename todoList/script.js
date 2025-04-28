@@ -1,9 +1,15 @@
 const inputElement = document.querySelector('#new-task');
 const todoListElement = document.querySelector('.todo-list');
+const dateElement = document.getElementById('current-date');
 
 let todoList = JSON.parse(localStorage.getItem("todoList")) || [];
 
 showHtml();
+
+const today = new Date();
+const formated = new Intl.DateTimeFormat('en-GB').format(today);
+
+dateElement.innerText = formated;
 
 function addTodo(){
     const todo = inputElement.value.trim(); // to avoid empty task
